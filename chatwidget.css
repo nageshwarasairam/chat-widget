@@ -1,0 +1,397 @@
+.mainwidget{
+    height:62x;
+    width:62px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:50px 13px 50px 50px; 
+    /* -webkit-filter: drop-shadow(0px 5px 5px rgb(184, 183, 183));
+    filter: drop-shadow(0px 5px 5px  rgb(184, 181, 181)); */
+   
+}
+.widget{
+   position:fixed;
+   bottom:20px;
+   right:20px;
+   cursor: pointer;
+}
+.container{
+    top: 110px;
+    right: 20px;
+    height:684px;
+    width:385px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    display:none;
+}
+.widgettop{
+    height:110px;
+    background-color:#1FA5D9;
+    border-radius: 6px 6px 0px 0px;
+}
+.indexwidgettop{
+   
+}
+.productwidgettop{
+    display:none;
+}
+.feedbackwidgettop{
+    display:none;
+}
+.pricingbillingwidgettop{
+    display:none;
+}
+.supportwidgettop{
+    display:none;
+}
+.frequentlyaskedwidgettop{
+    display:none;
+}
+.modernmessengerwidgettop{
+display:none;
+}
+div.headtitle{
+    color:rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: sans-serif;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.headtitle.modern{
+    font-size: 18px;
+    font-weight: 500;
+}
+div.titlestatus{
+    color:rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 300;
+    opacity: .8;
+    font-family: -apple-system, system-ui;
+    padding-left: 15px;
+    padding-top: 7px;
+    letter-spacing:normal;
+}
+
+.widgetbottom{
+    height:38px;
+    width:385px;
+    background-color:#EBECF0;
+    border-radius: 0px 0px 6px 6px;
+}
+div.chat{
+    text-align:center;
+    width:192px;
+    float: left;
+    padding: 11px 0;
+    font-family:Helvetica;
+    font-size: 12px;
+    color: rgb(39, 58, 94);
+    cursor: pointer;
+    font-weight: 300;
+    border-radius:2px 2px 2px 2px; 
+    border-bottom: 2px solid #1FA5D9;
+    border-bottom-left-radius: 5px;
+    max-height: 14px;
+}
+.byfreshchat{
+font-size:12px;
+font-weight: 200;
+font-family: sans-serif;
+color: rgb(148, 148, 148);
+margin-left: 135px;
+margin-top: 356px;
+}
+.chat:hover{
+    background-color:rgb(244, 245, 248);
+}
+.faq:hover{
+    background-color:rgb(244, 245, 248);
+}
+div.faq{
+    width:192px;
+    float:right;
+    text-align:center;
+    padding: 11px 0;
+    font-family:Helvetica;
+    font-size: 12px;
+    color: rgb(39, 58, 94);
+    cursor: pointer;
+    font-weight: 300;
+    border-radius:2px 2px 2px 2px; 
+    border-bottom: 2px solid #1FA5D9;
+    border-bottom-right-radius: 5px;
+    max-height: 14px;
+}
+/* this refers to the support chat page */
+.chatbox{
+    height:537px;
+    background-image: url("images/chatbackground.jpg");
+    display:none;
+}
+.fa-file-text-o{
+    margin-right: 7px;
+    color:rgb(110, 109, 109); 
+}
+.inputfield{
+    width:96%;
+    height:50px;
+    border-radius:7px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    margin-left: 7px;
+}
+.notification {
+    border-radius: 12px;
+    background: #DC391F;
+    width: 13px;
+    padding: 2px 4px;
+    height: 14px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+    font-family: Arial;
+
+}
+input:focus {
+    filter: drop-shadow(-1px -1px 5px  rgb(184, 181, 181));
+}
+::placeholder {
+    color:rgb(180, 175, 175);
+    opacity: 1;
+    font-size: 13px;
+}
+.rcorners1 {
+    border-radius: 3px 20px 20px;
+    background: #1FA5D9;
+    padding: 20px; 
+    max-width: 240px;
+    max-height:100px;   
+    color:white;
+    font-size: 14px;
+    font-family: Arial; 
+    margin-left: 50px;
+    margin-top: -33px;
+}
+.rcorners1.demo{
+    display: none;
+}
+.rcorners1.feedback{
+    display: none;
+}
+.rcorners1.price{
+    display: none;
+}
+.rcorners1.supportchat{
+
+}
+.inboxicon{
+ 
+  height:32x;
+  width:32px;
+  padding-left: 15px;
+  padding-top: 25px;
+ 
+}
+body{
+background: white;
+}
+.chatindex{
+    height:537px;
+    width:383px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+ 
+  
+}
+.channelname{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 650;
+    padding-left:75px;
+    padding-top: 20px;
+}
+.description{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 75px;
+    padding-top: 5px;
+    color:#A5A8AF;
+}
+.time{
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color:#A5A8AF;
+
+    padding-top: 22px;
+
+    margin-right: -30px;
+    float:right;
+}
+.category1{
+    height:85px;
+    border-bottom:solid;
+    border-bottom-width:1px;
+    border-bottom-color: #EBECF0; 
+}
+.category1:hover{
+    background-color:rgb(244, 245, 248);
+    cursor: pointer;
+}
+.productdemo{
+    height:42px;
+    width: 42px;
+    padding-top: 20px;
+    padding-left: 20px;
+    float: left;
+    color:#102a54;
+}
+
+/* this refers to the box card page */
+.frequentlyasked{
+    height:537px;
+    width:383px;
+    border-style: solid;
+    border-color: rgb(252, 252, 252);
+    border-width: 1px;
+    background-color:#F4F5F7;    
+    overflow:auto; 
+    display: none; 
+}
+.card1{
+    height:150px;
+    margin-top:15px;
+    margin-left: 15px;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 5px 5px  rgb(230, 227, 227));
+     float: left;
+    width: 41.73%;
+    padding: 5px;
+    border-radius: 5px;  
+}
+.card1:hover{
+    filter: drop-shadow(0px 5px 5px  rgb(184, 181, 181));
+    cursor: pointer;
+}
+.modernmessenger{
+    height:60px;
+    width: 60px;
+    padding-top: 35px;
+    padding-left: 50px;
+    transition:transform .2s ease-in-out;
+}
+.faqdescription{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+   text-align: center;
+    padding-top: 20px;
+    letter-spacing:0.8;
+    color:rgb(83, 109, 124);
+}
+.modernmessenger:hover{
+     transform: scale(1.1) rotate(3deg ) ;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* this refers to the questions page */
+.frequentlyaskedpage{
+    height:537px;
+    width:383px;
+    border-style: solid;
+    border-color: rgb(253, 253, 253);
+    border-width: 1px;
+    overflow:auto;
+    display: none;
+}
+.faqquestion{
+    height:60px;
+    border-bottom:solid;
+    border-bottom-width:1px;
+    border-bottom-color: #EBECF0; 
+}
+.question{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 320;
+    padding-left:55px;
+    padding-top: 27px;
+    color:rgb(64, 76, 104);
+}
+.questionicon{
+padding-top:20px;
+padding-left:20px;
+float: left;
+}
+.faqquestion:hover{
+    background-color:rgb(244, 245, 248);
+    cursor: pointer;
+}
+i.material-icons.chaticon{
+   font-size: 15px;
+   color:#273A58;
+
+}
+.material-icons.arrow{
+    font-size: 17px;
+    color: rgb(255, 254, 254);
+    padding-left: 12px;
+    padding-top: 15px;
+    cursor: pointer;
+    
+}
+.material-icons.indexicon{
+    font-size: 20px;
+    color: rgb(255, 254, 254);
+    padding-left: 15px;
+    padding-top: 15px;
+    cursor: pointer;
+  
+}
+.material-icons.description{
+    font-size: 20px;
+    color: rgb(255, 254, 254);
+    padding-left: 15px;
+    padding-top: 15px;
+    cursor: pointer; 
+}
+.material-icons.close{
+    color:white;
+    float: right;
+    padding-right: 15px;
+    padding-top: 15px;
+    opacity:0.5;
+    cursor:pointer;
+    font-size: 17px;
+}
+.material-icons.close:hover{
+    opacity:1;
+}
+.material-icons.attach{
+    font-size: 17px;
+    position: absolute;
+    margin-left: 290px;
+    font-size: 23px;
+    color: rgb(199, 199, 199);
+    margin-top: 493px;
+    cursor: pointer;
+}
+.material-icons.insertemoji{
+    font-size: 26px;
+    color: rgb(199, 199, 199);
+    margin-left: 331px;
+    position: absolute;
+    margin-top: 491px;
+    cursor: pointer;
+}
