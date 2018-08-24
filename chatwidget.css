@@ -7,6 +7,11 @@
     filter: drop-shadow(0px 5px 5px  rgb(184, 181, 181)); */
    
 }
+.mystyle {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+}
 .widget{
    position:fixed;
    bottom:20px;
@@ -21,6 +26,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: absolute;
     display:none;
+    border-radius:3px 3px 3px 3px;
 }
 .widgettop{
     height:110px;
@@ -88,18 +94,19 @@ div.chat{
     color: rgb(39, 58, 94);
     cursor: pointer;
     font-weight: 300;
-    border-radius:2px 2px 2px 2px; 
+    border-radius:2px 2px 2px 0px; 
     border-bottom: 2px solid #1FA5D9;
     border-bottom-left-radius: 5px;
     max-height: 14px;
 }
 .byfreshchat{
-font-size:12px;
-font-weight: 200;
-font-family: sans-serif;
-color: rgb(148, 148, 148);
-margin-left: 135px;
-margin-top: 356px;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: sans-serif;
+    color: rgb(148, 148, 148);
+    margin-left: 135px;
+
+    position: fixed;
 }
 .chat:hover{
     background-color:rgb(244, 245, 248);
@@ -117,8 +124,8 @@ div.faq{
     color: rgb(39, 58, 94);
     cursor: pointer;
     font-weight: 300;
-    border-radius:2px 2px 2px 2px; 
-    border-bottom: 2px solid #1FA5D9;
+    border-radius:2px 2px 2px 0px; 
+    border-bottom: 2px solid #EBECF0;
     border-bottom-right-radius: 5px;
     max-height: 14px;
 }
@@ -127,6 +134,7 @@ div.faq{
     height:537px;
     background-image: url("images/chatbackground.jpg");
     display:none;
+    overflow:auto;
 }
 .fa-file-text-o{
     margin-right: 7px;
@@ -140,11 +148,12 @@ div.faq{
     padding: 10px;
     outline: none;
     margin-left: 7px;
+ 
 }
 .notification {
     border-radius: 12px;
     background: #DC391F;
-    width: 13px;
+    max-width: 13px;
     padding: 2px 4px;
     height: 14px;
     font-size: 13px;
@@ -157,8 +166,27 @@ div.faq{
     font-family: Arial;
 
 }
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15;
+    color: #2D3F5C;
+}
+.inputreply{
+    width: 380;
+    position: fixed;
+    padding-top:23px;
+    padding-left: 3;
+}
 input:focus {
     filter: drop-shadow(-1px -1px 5px  rgb(184, 181, 181));
+}
+#list_item{
+    clear: both;
+}
+.overflow{
+    overflow:auto;
+    height:460px;
+   
 }
 ::placeholder {
     color:rgb(180, 175, 175);
@@ -166,19 +194,59 @@ input:focus {
     font-size: 13px;
 }
 .rcorners1 {
-    border-radius: 3px 20px 20px;
+    border-radius: 4px 18px 18px 4px;
     background: #1FA5D9;
-    padding: 20px; 
+    padding: 10px; 
     max-width: 240px;
     max-height:100px;   
     color:white;
-    font-size: 14px;
-    font-family: Arial; 
-    margin-left: 50px;
-    margin-top: -33px;
+    font-size: 13px;
+    font-family: -apple-system, system-ui;;
+    font-weight: 100;
+    margin: 2px; 
+    margin-left: -15px;
+    float: left;
+    clear: both;
+}
+.rcorners2 {
+    border-radius: 18px 4px 4px 18px;
+    background:white;
+    padding: 10px; 
+    max-width: 240px;
+    max-height:100px;   
+    color:#27323D;
+    font-size: 13px;
+    font-family: -apple-system, system-ui;;
+    font-weight:100; 
+    margin: 2px; 
+    float: right;
+    clear: both;
+    margin-right:15px;
+}
+.fqbox{
+    padding-bottom: 10px;
+}
+.byfreshchat.ci{
+    font-size: 12px;
+    font-weight: 200;
+    font-family: sans-serif;
+    color: rgb(148, 148, 148);
+    margin-left: 135px;
+    position: fixed;
+    margin-top: 170px;
+}
+ul {
+    list-style: none;
+  }
+ul li:first-child{ 
+    border-radius: 18px 18px 4px 18px;
+}
+ul li:last-child{ 
+    border-radius: 18px 4px 18px 18px;
 }
 .rcorners1.demo{
-    display: none;
+
+
 }
 .rcorners1.feedback{
     display: none;
@@ -187,7 +255,7 @@ input:focus {
     display: none;
 }
 .rcorners1.supportchat{
-
+    display: none;
 }
 .inboxicon{
  
@@ -257,9 +325,9 @@ background: white;
 /* this refers to the box card page */
 .frequentlyasked{
     height:537px;
-    width:383px;
+    width:385px;
     border-style: solid;
-    border-color: rgb(252, 252, 252);
+    border:none;
     border-width: 1px;
     background-color:#F4F5F7;    
     overflow:auto; 

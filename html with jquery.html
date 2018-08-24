@@ -1,16 +1,11 @@
 <html>
-<head>
-        <link rel="stylesheet" href="chatwidget.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-
 <body>
-        <input type="text" value="" size="20" id="rightside">
+<link rel="stylesheet" href="chatwidget.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div class="widget">
-    <img onclick="mainwidgetdisplay()"class="mainwidget" src="images/freshchat-dew.png">
+    <img class="mainwidget" src="images/freshchat-dew.png">
 </div>
 <div class="container">
     <div class="widgettop">
@@ -21,7 +16,7 @@
         <div class="titlestatus indexheading">Hi there! We'd love to help you out!</div> 
         </div>
         <div class="productwidgettop">
-        <i onclick="pdarrowdisplay()" class="material-icons arrow pdpage">arrow_back</i>
+        <i class="material-icons arrow">arrow_back</i>
         <i class="material-icons close">close</i>
         <div class="headtitle productdemotop">Product demo</div>
            <div class="titlestatus productdemotop">We’re currently away. Please leave us a message!</div> 
@@ -51,92 +46,79 @@
                 <div class="titlestatus freq">Browse through answers to common queries</div>  
         </div>
         <div class="modernmessengerwidgettop">
-                <i onclick="fqarrowdisplay()"class="material-icons arrow fqpage">arrow_back</i>
+                <i class="material-icons arrow fqpage">arrow_back</i>
                 <i class="material-icons close">close</i>
                 <div class="headtitle modern" >Modern Messenger</div>  
         </div>
     
 </div>
     <div class="chatbox">
-
-            <!-- <img class="inboxicon" src="images/freshchat-dew.png"> -->
-            <div class="overflow">
-            <ul id="list_item">
-                    <!-- <li class="rcorners1 demo">🙌 Let’s talk about your messaging needs.  Ask us any product questions you have and also request for your personalized demo.</li>
-                    <li class="rcorners1 feedback">👋We're all ears for feedback. Your opinion matters to us and we'd love to hear your thoughts to make the product better. </li>
-                    <li class="rcorners1 price"> Reach out to us in case you have any questions on pricing and billing here.</li>
-                    <li class="rcorners1 supportchat">Hello there! 👋 Need help? Reach out to us right here !!</li> -->
-            </ul>
-            </div>
-            <div class="byfreshchat">⚡ by Freshchat</div>
-            <div class="inputreply"><input type="text" class="inputfield" id="endereco" placeholder="Reply here..." value=""></div>
-             <div class="inputicons">
+             <img class="inboxicon" src="images/freshchat-dew.png">
+            <p class="rcorners1 demo">🙌 Let’s talk about your messaging needs.  Ask us any product questions you have and also request for your personalized demo.</p>
+            <p class="rcorners1 feedback">👋We're all ears for feedback. Your opinion matters to us and we'd love to hear your thoughts to make the product better. </p>
+            <p class="rcorners1 price"> Reach out to us in case you have any questions on pricing and billing here.</p>
+            <p class="rcorners1 supportchat">Hello there! 👋 Need help? Reach out to us right here !!</p>
+            <input type="text" class="inputfield" placeholder="Reply here...">
+            <div class="inputicons">
                 <i class="material-icons insertemoji">insert_emoticon</i>
                 <i class="material-icons attach">attach_file</i>
             </div>
            
     </div>
     <div class="chatindex">  
-        <div onclick="catergorydisplay()" class="category1"> 
+        <div class="category1"> 
             <img class="productdemo" src="images/productdemo.png"/>
-            <div class="notification">1</div> 
-            <div class="time">11.50 PM</div> 
             <div class="channelname">Product demo</div>
-            <div class ="description">👋Hello.</div>
-              
+            <div class ="description">👋Hello.</div>   
         </div>
-        <div onclick="catergorydisplay()" class="category1"> 
+        <div class="category1"> 
             <img class="productdemo" src="images/messeneger.png"/>
             <div class="channelname">Product Feedback</div>
             <div class ="description">👋 We're all ears for feedback. Your ...</div>   
         </div>
-        <div onclick="catergorydisplay()" class="category1"> 
+        <div class="category1"> 
                 <img class="productdemo" src="images/pricingbilling.png">
                 <div class="channelname">Pricing Billing</div>
                 <div class ="description">Reach out to us in case you have an...</div>   
          </div>
-         <div onclick="catergorydisplay()" class="category1"> 
+         <div class="category1"> 
                 <img class="productdemo" src="images/support.png">
                 <div class="channelname">Support</div>
                 <div class ="description">Hello there! 👋 Need help? Reach ou..</div>   
          </div>
-         <div class="byfreshchat ci">⚡ by Freshchat</div>
     </div>
 
 <div class="frequentlyasked">
-    <div class="fqbox">
     <div class="row">
-    <div onclick="card1display()" class="card1">
+    <div class="card1">
             <img class="modernmessenger" src="images/modernmessenger.png"> 
             <div class="faqdescription">Modern Messenger</div>
     </div>
-    <div onclick="card1display()" class="card1">
+    <div class="card1">
             <img class="modernmessenger" src="images/convertvisitors.png"> 
             <div class="faqdescription">Convert Visitors</div>
     </div>
-     <div onclick="card1display()" class="card1">
+     <div class="card1">
              <img class="modernmessenger" src="images/deleightusers.png"> 
              <div class="faqdescription">Deleight User</div>
      </div>
-     <div onclick="card1display()" class="card1">
+     <div class="card1">
              <img class="modernmessenger" src="images/pricing and billing faq.png"> 
              <div class="faqdescription">Pricing and billing</div>
     </div>
-    <div onclick="card1display()" class="card1">
+    <div class="card1">
             <img class="modernmessenger" src="images/comparisons.png"> 
             <div class="faqdescription">Comparisons</div>
     </div>
-    <div onclick="card1display()" class="card1">
+    <div class="card1">
             <img class="modernmessenger" src="images/mobilesdk.png"> 
             <div class="faqdescription">Mobile SDK and Integrations</div>
     </div>
-    <div onclick="card1display()" class="card1">
+    <div class="card1">
             <img class="modernmessenger" src="images/reportingdashboard.png"> 
             <div class="faqdescription">Reporting and Dashboard</div>
     </div>
     </div>
-</div>
-   
 </div>
 
 <div class="frequentlyaskedpage">
@@ -155,16 +137,66 @@
 </div>
    
     <div class="widgetbottom">
-           <div onclick="displaychat()" class="chat">
+           <div class="chat">
            <i class="material-icons chaticon">chat</i> CHAT
             </div> 
-            <div onclick="displayfaq()" class="faq" >
+            <div class="faq">
             <i class="fa fa-file-text-o"></i>FAQ
             </div>           
     </div>   
 </div>
 </body>
+<script>
+    $(document).ready(function(){
+        $(".mainwidget").click(function(){
+            $(this).fadeOut();
+            $(".container").fadeIn();
+        });
+        $(".close").click(function(){
+            $(".container").fadeOut();
+            $(".mainwidget").fadeIn();
+        });
+        $(".faq").click(function(){
+         $(".chatindex").css("display", "none");
+         $(".frequentlyasked").css("display", "block");
+         $(".indexwidgettop").css("display", "none");
+         $(".frequentlyaskedwidgettop").css("display","block");
+        });
+        $(".chat").click(function(){
+         $(".chatindex").css("display", "block");
+         $(".frequentlyasked").css("display", "none");
+         $(".indexwidgettop").css("display", "block");
+         $(".frequentlyaskedwidgettop").css("display","none");
+        }
+        )
+        $(".card1").click(function(){
+            $(".frequentlyasked").css("display", "none");
+            $(".frequentlyaskedpage").css("display", "block");
+            $(".frequentlyaskedwidgettop").css("display","none");
+            $(".modernmessengerwidgettop").css("display","block")
+        })
+        $(".category1").click(function(){
+            $(".chatindex").css("display","none");
+            $(".chatbox").css("display", "block");
+            $(".indexwidgettop").css("display", "none");
+            $(".supportwidgettop").css("display","block");
+          $(".inputfield" ).focus();
+        })
+        $(".arrow.fqpage").click(function(){
+            $(".frequentlyasked").css("display", "block");
+            $(".frequentlyaskedpage").css("display", "none");
+            $(".frequentlyaskedwidgettop").css("display","block");
+            $(".modernmessengerwidgettop").css("display","none")
+        })
+        $(".arrow.sppage").click(function(){
+            $(".chatindex").css("display","block");
+            $(".chatbox").css("display", "none");
+            $(".indexwidgettop").css("display", "none");
+            $(".supportwidgettop").css("display","block"); 
+        })
 
+    });
+    </script>
 </html>
 
 
