@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="styles/chatwidget.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="script/script.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>  
+        <p class="agentmessage-description">Send message from agent side here!</p>
+        <input type="text" value="" size="20" id="agentsideinput">
+        <div class="widget">
+                <img onclick="mainwidgetDisplay()"class="mainwidget" src="assets/freshchat-dew.png">
+        </div>
+        <div class="container">
+                <div class="widget-top">
+                        <div class="index-widget-top">
+                                <i class="material-icons index-icon">chat</i>
+                                <i class="material-icons close">close</i>
+                                <div class="head-title index-heading">Message Us</div>
+                                <div class="title-status index-heading">Hi there! We'd love to help you out!</div> 
+                        </div>
+                        <div class="product-widget-top">
+                                <i onclick="pdarrowDisplay()" class="material-icons arrow pdpage">arrow_back</i>
+                                <i class="material-icons close">close</i>
+                                <div class="head-title product-demo-top">Product demo</div>
+                                <div class="title-status product-demo-top">We’re currently away. Please leave us a message!</div> 
+                        </div>
+                        <div class="feedback-widget-top">
+                                <i class="material-icons arrow">arrow_back</i>
+                                <i class="material-icons close">close</i>
+                                <div class="head-title product-feedback" >Product Feedback</div>
+                                <div class="title-status product-feedback">We’re currently away. Please leave us a message!</div> 
+                        </div>
+                        <div class="pricing-billing-widget-top">
+                                <i class="material-icons arrow">arrow_back</i>
+                                <i class="material-icons close">close</i>
+                                <div class="head-title pricing-billing" >Pricing Billing</div>
+                                <div class="title-status pricing-billing">We’re currently away. Please leave us a message!</div> 
+                        </div>
+                        <div class="support-widget-top">
+                                <i class="material-icons arrow sppage">arrow_back</i>
+                                <i class="material-icons close">close</i>
+                                <div class="head-title support" >Support</div>
+                                <div class="title-status support">Currently replying in few hours</div> 
+                        </div>
+                        <div class="frequentlyasked-widget-top">
+                                <i class="material-icons description"> description</i>
+                                <i class="material-icons close">close</i>
+                                <div class="head-title freq" >Frequently Asked Questions</div>
+                                <div class="title-status freq">Browse through answers to common queries</div>  
+                        </div>
+                        <div class="modernmessenger-widget-top">
+                                <i onclick="fqarrowDisplay()"class="material-icons arrow fqpage">arrow_back</i>
+                                <i class="material-icons close">close</i>
+                                <div class="head-title modern" >Modern Messenger</div>  
+                        </div>
+                
+                </div>
+                <div class="chatbox">
+                        <div id="chat-container">
+                                <ul class="ul-agent">
+                                        <li class="agent demo">🙌 Let’s talk about your messaging needs.  Ask us any product questions you have and also request for your personalized demo.</li>
+                                        <li class="agent feedback">👋We're all ears for feedback. Your opinion matters to us and we'd love to hear your thoughts to make the product better. </li>
+                                        <li class="agent price"> Reach out to us in case you have any questions on pricing and billing here.</li>
+                                        <li class="agent supportchat">Hello there! 👋 Need help? Reach out to us right here !!</li>
+                                </ul>
+                        </div>
+                        <div class="byfreshchat">⚡ by Freshchat</div>
+                        <div class="inputreply"><input  type="text" class="inputfield" id="customersideinput" placeholder="Reply here..." value=""></div>
+                
+                </div>
+                <div class="chatindex">  
+                        <div onclick="catergoryDisplay()" class="category1"> 
+                                <img class="productdemo" src="assets/productdemo.png"/>
+                                <div class="notification">1</div> 
+                                <div class="time">11.50 PM</div> 
+                                <div class="channelname">Product demo</div>
+                                <div class ="description">👋Hello.</div>
+                        
+                        </div>
+                        <div onclick="catergoryDisplay()" class="category1"> 
+                                <img class="productdemo" src="assets/messeneger.png"/>
+                                <div class="channelname">Product Feedback</div>
+                                <div class ="description">👋 We're all ears for feedback. Your ...</div>   
+                        </div>
+                        <div onclick="catergoryDisplay()" class="category1"> 
+                                <img class="productdemo" src="assets/pricingbilling.png">
+                                <div class="channelname">Pricing Billing</div>
+                                <div class ="description">Reach out to us in case you have an...</div>   
+                        </div>
+                        <div onclick="catergoryDisplay()" class="category1"> 
+                                <img class="productdemo" src="assets/support.png">
+                                <div class="channelname">Support</div>
+                                <div class ="description">Hello there! 👋 Need help? Reach ou..</div>   
+                        </div>
+                        <div class="byfreshchat ci">⚡ by Freshchat</div>
+                </div>
+
+                <div class="frequentlyasked">
+                        <div class="fqbox">
+                                <div class="row">
+                                        <div onclick="card1Display()" class="card1">
+                                                <img class="modernmessenger" src="assets/modernmessenger.png"> 
+                                                <div class="faqdescription">Modern Messenger</div>
+                                        </div>
+                                        <div onclick="card1Display()" class="card1">
+                                                <img class="modernmessenger" src="assets/convertvisitors.png"> 
+                                                <div class="faqdescription">Convert Visitors</div>
+                                        </div>
+                                        <div onclick="card1Display()" class="card1">
+                                                <img class="modernmessenger" src="assets/deleightusers.png"> 
+                                                <div class="faqdescription">Deleight User</div>
+                                        </div>
+                                        <div onclick="card1Display()" class="card1">
+                                                <img class="modernmessenger" src="assets/pricing and billing faq.png"> 
+                                                <div class="faqdescription">Pricing and billing</div>
+                                        </div>
+                                        <div onclick="card1Display()" class="card1">
+                                                <img class="modernmessenger" src="assets/comparisons.png"> 
+                                                <div class="faqdescription">Comparisons</div>
+                                        </div>
+                                        <div onclick="card1Display()" class="card1">
+                                                <img class="modernmessenger" src="assets/mobilesdk.png"> 
+                                                <div class="faqdescription">Mobile SDK and Integrations</div>
+                                        </div>
+                                        <div onclick="card1Display()" class="card1">
+                                                <img class="modernmessenger" src="assets/reportingdashboard.png"> 
+                                                <div class="faqdescription">Reporting and Dashboard</div>
+                                        </div>
+                                </div>
+                        </div>
+                
+                </div>
+
+                <div class="frequentlyasked-page">
+                        <div class="faqquestion"> 
+                                <img class="questionicon" src="assets/faq.svg"/>
+                                <div class="question">Is Freshchat just another live chat tool?</div>  
+                        </div>
+                        <div class="faqquestion"> 
+                                <img class="questionicon" src="assets/faq.svg"/>
+                                <div class="question">What are Message Channels?</div>  
+                        </div>
+                        <div class="faqquestion"> 
+                                <img class="questionicon" src="assets/faq.svg"/>
+                                <div class="question">What are Integrated FAQs?</div>  
+                        </div>
+                </div>
+        
+                <div class="widgetbottom">
+                        <div onclick="displayChat()" class="chat">
+                                <i class="material-icons chaticon">chat</i> CHAT
+                        </div> 
+                        <div onclick="displayFaq()" class="faq" >
+                                <i class="fa fa-file-text-o"></i>FAQ
+                        </div>           
+                </div>   
+        </div>
+</body>
+
+</html>
+
+

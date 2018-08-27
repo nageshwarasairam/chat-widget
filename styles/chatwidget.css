@@ -1,12 +1,9 @@
-/* Css file */
+
 .mainwidget{
     height:62x;
     width:62px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius:50px 13px 50px 50px; 
-    /* -webkit-filter: drop-shadow(0px 5px 5px rgb(184, 183, 183));
-    filter: drop-shadow(0px 5px 5px  rgb(184, 181, 181)); */
-   
 }
 .mystyle {
     width: 300px;
@@ -29,33 +26,30 @@
     display:none;
     border-radius:3px 3px 3px 3px;
 }
-.widgettop{
+.widget-top{
     height:110px;
     background-color:#1FA5D9;
     border-radius: 6px 6px 0px 0px;
 }
-.indexwidgettop{
-   
-}
-.productwidgettop{
+.product-widget-top{
     display:none;
 }
-.feedbackwidgettop{
+.feedback-widget-top{
     display:none;
 }
-.pricingbillingwidgettop{
+.pricing-billing-widget-top{
     display:none;
 }
-.supportwidgettop{
+.support-widget-top{
     display:none;
 }
-.frequentlyaskedwidgettop{
+.frequentlyasked-widget-top{
     display:none;
 }
-.modernmessengerwidgettop{
-display:none;
+.modernmessenger-widget-top{
+    display:none;
 }
-div.headtitle{
+div.head-title{
     color:rgb(255, 255, 255);
     font-size: 22px;
     font-weight: 700;
@@ -64,11 +58,11 @@ div.headtitle{
     padding-left: 15px;
     padding-top: 10px;
 }
-.headtitle.modern{
+.head-title.modern{
     font-size: 18px;
     font-weight: 500;
 }
-div.titlestatus{
+div.title-status{
     color:rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 300;
@@ -78,7 +72,19 @@ div.titlestatus{
     padding-top: 7px;
     letter-spacing:normal;
 }
-
+#agentsideinput{
+    border-radius:5px;
+    border-color: #1FA5D9; 
+    outline: none;
+    width: 200px;
+    height: 30px;
+    font: 15px Arial, Helvetica, sans-serif;
+}
+.agentmessage-description{
+    color: #273A58;
+    font-family: -apple-system, system-ui;
+    size: 15px;
+}
 .widgetbottom{
     height:38px;
     width:385px;
@@ -106,8 +112,6 @@ div.chat{
     font-family: sans-serif;
     color: rgb(148, 148, 148);
     margin-left: 135px;
-
-    position: fixed;
 }
 .chat:hover{
     background-color:rgb(244, 245, 248);
@@ -130,10 +134,10 @@ div.faq{
     border-bottom-right-radius: 5px;
     max-height: 14px;
 }
-/* this refers to the support chat page */
+
 .chatbox{
     height:537px;
-    background-image: url("images/chatbackground.jpg");
+    background-image: url("../assets/chatbackground.jpg");
     display:none;
     overflow:auto;
 }
@@ -142,15 +146,18 @@ div.faq{
     color:rgb(110, 109, 109); 
 }
 .inputfield{
-    width:96%;
-    height:50px;
+    width:90%;
+    height:30px;
     border-radius:7px;
     border: none;
     padding: 10px;
-    outline: none;
-    margin-left: 7px;
- 
+    margin-left: 10px;
+    font: 15px Arial, Helvetica, sans-serif;
+    outline:none;
+    color: #2D3F5C;
 }
+
+
 .notification {
     border-radius: 12px;
     background: #DC391F;
@@ -167,24 +174,12 @@ div.faq{
     font-family: Arial;
 
 }
-input{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15;
-    color: #2D3F5C;
-}
-.inputreply{
-    width: 380;
-    position: fixed;
-    padding-top:23px;
-    padding-left: 3;
-}
+
 input:focus {
     filter: drop-shadow(-1px -1px 5px  rgb(184, 181, 181));
 }
-#list_item{
-    clear: both;
-}
-.overflow{
+
+#chat-container{
     overflow:auto;
     height:460px;
    
@@ -194,7 +189,7 @@ input:focus {
     opacity: 1;
     font-size: 13px;
 }
-.rcorners1 {
+.agent {
     border-radius: 4px 18px 18px 4px;
     background: #1FA5D9;
     padding: 10px; 
@@ -209,7 +204,7 @@ input:focus {
     float: left;
     clear: both;
 }
-.rcorners2 {
+.customer{
     border-radius: 18px 4px 4px 18px;
     background:white;
     padding: 10px; 
@@ -233,33 +228,33 @@ input:focus {
     font-family: sans-serif;
     color: rgb(148, 148, 148);
     margin-left: 135px;
-    position: fixed;
     margin-top: 170px;
 }
 ul {
     list-style: none;
   }
-ul li:first-child{ 
+ul li.customer:first-child{ 
     border-radius: 18px 18px 4px 18px;
 }
-ul li:last-child{ 
+ul li.customer:last-child{ 
     border-radius: 18px 4px 18px 18px;
 }
-.rcorners1.demo{
-
-
+ul li.agent:first-child{ 
+    border-radius: 18px 18px 18px 4px;
 }
-.rcorners1.feedback{
+ul li.agent:last-child{ 
+    border-radius: 4px 18px 18px 18px;
+}
+.agent.feedback{
     display: none;
 }
-.rcorners1.price{
+.agent.price{
     display: none;
 }
-.rcorners1.supportchat{
+.agent.supportchat{
     display: none;
 }
 .inboxicon{
- 
   height:32x;
   width:32px;
   padding-left: 15px;
@@ -374,8 +369,8 @@ background: white;
     clear: both;
     display: table;
 }
-/* this refers to the questions page */
-.frequentlyaskedpage{
+
+.frequentlyasked-page{
     height:537px;
     width:383px;
     border-style: solid;
@@ -420,7 +415,7 @@ i.material-icons.chaticon{
     cursor: pointer;
     
 }
-.material-icons.indexicon{
+.material-icons.index-icon{
     font-size: 20px;
     color: rgb(255, 254, 254);
     padding-left: 15px;
