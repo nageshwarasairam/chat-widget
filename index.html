@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
         <link rel="stylesheet" href="styles/chatwidget.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,6 +11,23 @@
         <input type="text" value="" size="20" id="agentsideinput">
         <div class="widget">
                 <img onclick="mainwidgetDisplay()"class="mainwidget" src="assets/freshchat-dew.png">
+        </div>
+        <div class="notification-widget">
+                <div class="notification-widget-top">
+                        <i class="material-icons close notification-close" onclick="hidenotifyWidget()">close</i>
+                        <div class="googleicon-div">
+                                <img class="googleicon" src="assets/google.png">
+                        </div>
+                        <div class="notification-details"  onclick="displayMessagepage()">
+                                 <div class="agents-name">Nagesh Sairam</div>
+                                 <div class="agents-message"></div>
+                        </div>
+                        
+                </div>
+                <div class="notification-widget-bottom">
+                    <input type="text" class="notification-widget-input" id="customersideinput" placeholder="Reply here..." value="">
+                </div>
+                       
         </div>
         <div class="container">
                 <div class="widget-top">
@@ -68,7 +84,7 @@
                                 </ul>
                         </div>
                         <div class="byfreshchat">⚡ by Freshchat</div>
-                        <div class="inputreply"><input  type="text" class="inputfield" id="customersideinput" placeholder="Reply here..." value=""></div>
+                        <div class="inputreply"><input  type="text" class="inputfield" id="customersideinput1" placeholder="Reply here..." value=""></div>
                 
                 </div>
                 <div class="chatindex">  
