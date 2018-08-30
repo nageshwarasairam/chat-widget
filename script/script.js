@@ -3,7 +3,13 @@ document.addEventListener('DOMContentLoaded',applyCss);
         var classname = document.getElementsByClassName("close");
         for (var i = 0; i < classname.length; i++) {
                classname[i].addEventListener('click', mainwidgetclose);
-           }  
+           } 
+           document.getElementsByClassName("category1")[0].addEventListener('click',catergoryDisplay);
+           document.getElementsByClassName("card1")[0].addEventListener('click',card1Display);
+           document.getElementsByClassName("chat")[0].addEventListener('click',displayChat);
+           document.getElementsByClassName("faq")[0].addEventListener('click',displayFaq);
+           document.getElementsByClassName("notification-details")[0].addEventListener('click',displayMessagepage);
+           document.getElementsByClassName("mainwidget")[0].addEventListener('click',mainwidgetDisplay);
          }
 
          window.onload = function(){
